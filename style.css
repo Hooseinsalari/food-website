@@ -125,3 +125,44 @@ img {
     letter-spacing: 5px;
     border-radius: 4px;
 }
+
+/*? ========== about =========== */
+.about {
+    padding: 100px;
+}
+
+.about__box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__text {
+    padding: 0 1rem;
+    width: 48%;
+    font-weight: 400;
+}
+
+.about__title {
+    font-weight: 300;
+}
+
+.about__title span {
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.about__desc {
+    font-size: .9rem;
+}
+
+.about__img {
+    width: 50%;
+    height: 100%;
+}
+
+.about__img img {
+    height: 100%;
+    width: 100%;
+}
