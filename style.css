@@ -49,7 +49,7 @@ img {
   border-radius: 4px;
 }
 
-/* ========= header ========= */
+/* !========= header ========= */
 .header {
   width: 100%;
   position: fixed;
@@ -111,6 +111,18 @@ img {
   opacity: 1;
 }
 
+.nav__toggle {
+    display: none;
+}
+
+.nav__scroll .nav__toggle {
+    color: #000;
+}
+
+.nav__close {
+    display: none;
+}
+
 /* ======= home ======== */
 
 .home {
@@ -133,7 +145,6 @@ img {
 }
 
 .home__desc {
-  /* width: 70%; */
   max-width: 40rem;
   font-size: 1rem;
   font-weight: 500;
@@ -182,7 +193,7 @@ img {
 
 .menu__box {
   text-align: left;
-  width: 20rem;
+  width: 18rem;
   border: 15px solid #fff;
   border-radius: 5px;
   margin: 20px;
@@ -339,4 +350,111 @@ img {
 .contacts__form input:focus,
 .contacts__form textarea:focus {
   border: 2px solid #ff0157;
+}
+
+/* ========= responsive ========= */
+@media (max-width: 768px) {
+    .primaryBtn {
+        font-size: .9rem;
+    }
+
+    .nav {
+        padding: .3rem 1.5rem;
+    }
+    
+    .nav__menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #ff0157;
+        transform: translateX(100%);
+        transition: .3s;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .nav__link {
+        margin: 1rem auto;
+        opacity: 1;
+    }
+
+    .nav__close {
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        z-index: 10;
+        font-size: 2.5rem;
+    }
+
+    .nav__scroll .nav__link {
+        color: #fff;
+        opacity: 1;
+    }
+
+    .nav__toggle {
+        display: block;
+        color: #fff;
+        padding-top: 5px;
+        font-size: 2.5rem;
+    }
+
+    /* ======== home ======= */
+    .home__title {
+        font-size: 2.5rem;
+    }
+
+    .home__desc {
+        max-width: 25rem;
+        text-align: center;
+        font-size: .9rem;
+    }
+
+    /* ======== about ======== */
+    .about {
+        padding: 100px 20px 5%;
+    }
+
+    .about__box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__text {
+        width: 100%;
+    }
+
+    .about__img {
+        width: 95%;
+        margin-top: 1.8rem;
+    }
+
+    /* ========= menu ========= */
+    .menu {
+        padding: 100px 20px 5%;
+    }
+
+    /* ========== expert =========== */
+    .expert {
+        padding: 100px 20px 5%;
+        text-align: center;
+    }
+
+    /* ========= contacts ========== */
+    .contacts {
+        padding: 100px .5rem 4rem;
+      }
+
+    .contacts__form {
+        width: auto;
+        margin: auto;
+        padding: 2rem;
+    }
 }
