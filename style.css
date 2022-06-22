@@ -235,3 +235,63 @@ img {
     font-weight: 400;
     color: #111;
 }
+
+/* ========== testimonials ========== */
+.testimonials {
+    padding: 100px 2rem;
+    width: 100%;
+    background: url('./image/bg2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.testi__title { 
+    color: #fff;
+}
+
+.testi__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.testi__item {
+    width: 18rem;
+    text-align: center;
+    background-color: #fff;
+    padding: 2rem 1.3rem;
+    border-radius: 2px;
+}
+
+.testi__img {
+    width: 4rem;
+    display: inline-block;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: .5rem;
+}
+
+.testi__img img{
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.testi__text p{
+    color: #111;
+    padding: .6rem;
+    font-size: .9;
+    font-style: italic;
+    opacity: .8;
+}
+
+.testi__name h3{
+    margin-top: 1rem;
+    color: #ff0157;
+    font-weight: 600;
+}
