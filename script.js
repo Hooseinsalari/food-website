@@ -6,7 +6,7 @@ const navMenu = document.querySelector(".nav__menu");
 const navItmes = document.querySelectorAll(".nav__item");
 
 window.onscroll = function () {
-  if (window.scrollY > 80) {
+  if (document.body.scrollTop >= 80 || document.documentElement.scrollTop >= 80) {
     navbar.classList.add("nav__scroll");
   } else {
     navbar.classList.remove("nav__scroll");
