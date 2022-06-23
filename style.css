@@ -109,6 +109,8 @@ img {
 
 .nav__link:hover {
   opacity: 1;
+  color: #ff0157;
+  font-weight: 500;
 }
 
 .nav__toggle {
@@ -328,6 +330,7 @@ img {
   width: 30rem;
   padding: 4rem 2.5rem;
   background-color: #fff;
+  margin-top: 3rem;
 }
 
 .contacts__form h3 {
@@ -361,6 +364,10 @@ img {
     .nav {
         padding: .3rem 1.5rem;
     }
+
+    .nav__scroll {
+      padding: 0rem 1.5rem;
+    }
     
     .nav__menu {
         position: fixed;
@@ -392,6 +399,7 @@ img {
         right: 1.5rem;
         z-index: 10;
         font-size: 2.5rem;
+        color: #fff;
     }
 
     .nav__scroll .nav__link {
@@ -409,12 +417,14 @@ img {
     /* ======== home ======= */
     .home__title {
         font-size: 2.5rem;
+        margin: .5rem;
     }
 
     .home__desc {
         max-width: 25rem;
         text-align: center;
         font-size: .9rem;
+        margin: .5rem;
     }
 
     /* ======== about ======== */
@@ -453,8 +463,16 @@ img {
       }
 
     .contacts__form {
-        width: auto;
-        margin: auto;
+        width: 24rem;
+        margin: 1.5rem;
         padding: 2rem;
     }
+}
+
+@media (max-width: 445px) {
+  .contacts__form {
+    width: auto;
+    margin: 1rem;
+    padding: 2rem;
+  }
 }

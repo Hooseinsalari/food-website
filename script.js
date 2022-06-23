@@ -3,14 +3,12 @@ const navbar = document.querySelector(".nav");
 const closeBtn = document.querySelector(".nav__close");
 const showMenuBtn = document.querySelector(".nav__toggle");
 const navMenu = document.querySelector(".nav__menu");
-const navItmes = document.querySelector(".nav__item");
+const navItmes = document.querySelectorAll(".nav__item");
 
 window.onscroll = function () {
-  if (window.scrollY > 100) {
+  if (window.scrollY > 80) {
     navbar.classList.add("nav__scroll");
-    // navbar.classList.remove("nav-transparent");
   } else {
-    // navbar.classList.add("nav-transparent");
     navbar.classList.remove("nav__scroll");
   }
 };
@@ -22,3 +20,8 @@ showMenuBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
   navMenu.style.transform = "translateX(100%)";
 });
+
+navItmes.forEach((l) => l.addEventListener('click', () => {
+  navMenu.style.transform = "translateX(100%)";
+  console.log('salam')
+}))
