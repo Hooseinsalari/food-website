@@ -110,19 +110,18 @@ img {
 .nav__link:hover {
   opacity: 1;
   color: #ff0157;
-  font-weight: 500;
 }
 
 .nav__toggle {
-    display: none;
+  display: none;
 }
 
 .nav__scroll .nav__toggle {
-    color: #000;
+  color: #000;
 }
 
 .nav__close {
-    display: none;
+  display: none;
 }
 
 /* ======= home ======== */
@@ -357,116 +356,125 @@ img {
 
 /* ========= responsive ========= */
 @media (max-width: 768px) {
-    .primaryBtn {
-        font-size: .9rem;
-    }
+  .primaryBtn {
+    font-size: 0.9rem;
+  }
 
-    .nav {
-        padding: .3rem 1.5rem;
-    }
+  .nav {
+    padding: 0.3rem 1.5rem;
+  }
 
-    .nav__scroll {
-      padding: 0rem 1.5rem;
-    }
-    
-    .nav__menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: #ff0157;
-        transform: translateX(100%);
-        transition: .3s;
-    }
+  .nav__scroll {
+    padding: 0rem 1.5rem;
+  }
 
-    .nav__list {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #ff0157;
+    transform: translateX(100%);
+    transition: 0.3s;
+  }
 
-    .nav__link {
-        margin: 1rem auto;
-        opacity: 1;
-    }
+  .show-menu {
+    transform: translateX(0);
+  }
 
-    .nav__close {
-        display: block;
-        position: absolute;
-        top: 1.5rem;
-        right: 1.5rem;
-        z-index: 10;
-        font-size: 2.5rem;
-        color: #fff;
-    }
+  .nav__list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
 
-    .nav__scroll .nav__link {
-        color: #fff;
-        opacity: 1;
-    }
+  .nav__link {
+    margin: 1rem auto;
+    opacity: 0.9;
+  }
 
-    .nav__toggle {
-        display: block;
-        color: #fff;
-        padding-top: 5px;
-        font-size: 2.5rem;
-    }
+  .nav__link:hover {
+    opacity: 1;
+    color: #fff;
+  }
 
-    /* ======== home ======= */
-    .home__title {
-        font-size: 2.5rem;
-        margin: .5rem;
-    }
+  .nav__close {
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 10;
+    font-size: 2.5rem;
+    color: #fff;
+  }
 
-    .home__desc {
-        max-width: 25rem;
-        text-align: center;
-        font-size: .9rem;
-        margin: .5rem;
-    }
+  .nav__scroll .nav__link {
+    color: #fff;
+    opacity: 1;
+  }
 
-    /* ======== about ======== */
-    .about {
-        padding: 100px 20px 5%;
-    }
+  .nav__toggle {
+    display: block;
+    color: #fff;
+    padding-top: 5px;
+    font-size: 2.5rem;
+  }
 
-    .about__box {
-        flex-direction: column;
-        align-items: center;
-    }
+  /* ======== home ======= */
+  .home__title {
+    font-size: 2.5rem;
+    margin: 0.5rem;
+  }
 
-    .about__text {
-        width: 100%;
-    }
+  .home__desc {
+    max-width: 25rem;
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 0.5rem;
+  }
 
-    .about__img {
-        width: 95%;
-        margin-top: 1.8rem;
-    }
+  /* ======== about ======== */
+  .about {
+    padding: 100px 20px 5%;
+  }
 
-    /* ========= menu ========= */
-    .menu {
-        padding: 100px 20px 5%;
-    }
+  .about__box {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    /* ========== expert =========== */
-    .expert {
-        padding: 100px 20px 5%;
-        text-align: center;
-    }
+  .about__text {
+    width: 100%;
+  }
 
-    /* ========= contacts ========== */
-    .contacts {
-        padding: 100px .5rem 4rem;
-      }
+  .about__img {
+    width: 95%;
+    margin-top: 1.8rem;
+  }
 
-    .contacts__form {
-        width: 24rem;
-        margin: 1.5rem;
-        padding: 2rem;
-    }
+  /* ========= menu ========= */
+  .menu {
+    padding: 100px 20px 5%;
+  }
+
+  /* ========== expert =========== */
+  .expert {
+    padding: 100px 20px 5%;
+    text-align: center;
+  }
+
+  /* ========= contacts ========== */
+  .contacts {
+    padding: 100px 0.5rem 4rem;
+  }
+
+  .contacts__form {
+    width: 24rem;
+    margin: 1.5rem;
+    padding: 2rem;
+  }
 }
 
 @media (max-width: 445px) {

@@ -14,14 +14,15 @@ window.onscroll = function () {
 };
 
 showMenuBtn.addEventListener("click", () => {
-  navMenu.style.transform = "translateX(0)";
+  navMenu.classList.add("show-menu");
 });
 
 closeBtn.addEventListener("click", () => {
-  navMenu.style.transform = "translateX(100%)";
+  navMenu.classList.remove("show-menu");
 });
 
-navItmes.forEach((l) => l.addEventListener('click', () => {
-  navMenu.style.transform = "translateX(100%)";
-  console.log('salam')
-}))
+navItmes.forEach((l) =>
+  l.addEventListener("click", () => {
+    navMenu.classList.remove("show-menu");
+  })
+);
